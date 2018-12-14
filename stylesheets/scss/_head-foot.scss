@@ -71,3 +71,22 @@
     }
 }
 
+.background-gray { 
+    background: #434242;
+    padding-top: 20px; 
+    .contact{
+        color: white;
+    }
+    ul.no-bullets {
+        list-style-type: none; 
+        margin: 0px; 
+        padding: 0px; 
+    }
+    .link{
+        color:grey;
+    }
+    .c-title{
+        color:grey;
+    }
+   
+}

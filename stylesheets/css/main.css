@@ -59,6 +59,20 @@
     padding-top: 28px; }
   100% {
     padding-top: 20px; } }
+.background-gray {
+  background: #434242;
+  padding-top: 20px; }
+  .background-gray .contact {
+    color: white; }
+  .background-gray ul.no-bullets {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px; }
+  .background-gray .link {
+    color: grey; }
+  .background-gray .c-title {
+    color: grey; }
+
 h1, h4 {
   font-weight: 700;
   margin-bottom: 10px; }
