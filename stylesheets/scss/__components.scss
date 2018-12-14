@@ -3,8 +3,8 @@
     position: relative;
     top: 50px;
     z-index: 4;
-		text-align: center;
-		margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
     .profile {
         h2 {
             font-size: 54px;
@@ -51,38 +51,86 @@
     }
 }
 
-.experiences{
-	background-color: #efe9d2;
-	margin-top:60px;
+.experiences {
+    background-color: #efe9d2;
+    margin-top: 60px;
     text-align: center;
     height: auto;
-
-	.e-title{
-		padding-top:50px;
-		color: $color-bgreen;
-		font-weight: 100;
-	}
-	.e-p-title{
-		color: #727878;
-		font-size: 20px;
-		font-weight: 100;
+    .e-title {
+        padding-top: 50px;
+        color: $color-bgreen;
+        font-weight: 100;
     }
-    .education{
-       text-align: left;
+    .e-p-title {
+        color: #727878;
+        font-size: 20px;
+        font-weight: 100;
     }
-    .row{
+    .education {
+        text-align: left;
+    }
+    .row {
         padding-bottom: 20px;
     }
-    .a-title{
-        font-size:20px;
+    .a-title {
+        font-size: 20px;
     }
     .experience-details {
-         display: block;
-         color: #22A39F;
-       
+        display: block;
+        color: #22A39F;
+    }
+    .seperator {
+        color: #BCBCBC;
+    }
+}
+
+.abilities {
+    .a-p-title {
+        color: #727878;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .skills {
+        text-align: left;
+        margin-left: 58px;
+        padding-bottom: 20px;
+    }
+    ul>li:hover {
+        background: #F2F2F2;
+    }
+    .no-bullets {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .ability-title {
+        display: inline-block;
+        width: 60%;
+        text-align: left;
+        color: #5a5e5e;
+    }
+    .ability-score {
+        float: right;
+        .fas {
+            color: #22A39F;
+            font-size: 14px;
+            transition: all 0.3s;
         }
-        .seperator {
-             color: #BCBCBC; 
-            }
-  
+        .blank {
+            color: #e0e1e1;
+        }
+    }
+    ul>li:hover .ability-score .fas {
+        margin-left: 2px;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    .project-referal {
+        margin-top: 40px;
+        p {
+            font-style: italic;
+            color: #999999;
+        }
+    }
 }

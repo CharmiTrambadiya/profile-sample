@@ -75,7 +75,7 @@ h3 {
   font-size: 28px; }
 
 hr {
-  width: 90%; }
+  width: 100%; }
 
 .bg-white {
   background: #FFFFFF;
@@ -140,5 +140,42 @@ hr {
     color: #22A39F; }
   .experiences .seperator {
     color: #BCBCBC; }
+
+.abilities .a-p-title {
+  color: #727878;
+  font-size: 20px;
+  font-weight: 100; }
+.abilities .skills {
+  text-align: left;
+  margin-left: 58px;
+  padding-bottom: 20px; }
+.abilities ul > li:hover {
+  background: #F2F2F2; }
+.abilities .no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
+.abilities .ability-title {
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  color: #5a5e5e; }
+.abilities .ability-score {
+  float: right; }
+  .abilities .ability-score .fas {
+    color: #22A39F;
+    font-size: 14px;
+    transition: all 0.3s; }
+  .abilities .ability-score .blank {
+    color: #e0e1e1; }
+.abilities ul > li:hover .ability-score .fas {
+  margin-left: 2px; }
+.abilities li {
+  padding-bottom: 10px; }
+.abilities .project-referal {
+  margin-top: 40px; }
+  .abilities .project-referal p {
+    font-style: italic;
+    color: #999999; }
 
 /*# sourceMappingURL=main.css.map */
