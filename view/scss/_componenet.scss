@@ -39,35 +39,25 @@
       }
       .ability-score {
         float: right;
-        .glyphicon {
+        min-height: 30px;
+        padding: 3px 0px;
+        .blank {
+          color: #e0e1e1;
+        }
+        .fas {
           color: #DFE0E0;
           font-size: 14px;
           transition: all 0.3s;
         }
       }
-      min-height: 30px;
-      padding: 3px 0px;
+
+      
       &:hover {
         background: #f2f2f2;
       }
-      .ability-title {
-        display: inline-block;
-        width: 60%;
-
-        .ability-score {
-          float: right;
-          .fas {
-            color: #dfe0e0;
-            font-size: 14px;
-            transition: all 0.3s;
-          }
-        }
-      }
-     
+       
     }
-    .ability-score .blank {
-      color: #e0e1e1;
-    }
+    
     ul > li {
       .ability-score .fas {
         color: #22a39f;
@@ -147,7 +137,7 @@
       margin-bottom: 6px;
     }
     .seperator {
-      display: none;
+      // display: none;
     }
   }
   
