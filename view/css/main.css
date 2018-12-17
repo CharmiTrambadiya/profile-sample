@@ -12,7 +12,6 @@
     padding-top: 8px;
     margin-bottom: 10px; }
   #experiences .experience .experience-details {
-    display: block;
     margin-top: 6px; }
     #experiences .experience .experience-details * {
       color: #22A39F; }
@@ -34,24 +33,18 @@
     #abilities ul > li .ability-score .glyphicon {
       color: #DFE0E0;
       font-size: 14px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
       transition: all 0.3s; }
   #abilities ul > li:hover {
     background: #f2f2f2; }
   #abilities ul > li .ability-title {
     display: inline-block;
     width: 60%; }
-  #abilities ul > li .ability-score {
-    float: right; }
-    #abilities ul > li .ability-score .fas {
-      color: #dfe0e0;
-      font-size: 14px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s; }
+    #abilities ul > li .ability-title .ability-score {
+      float: right; }
+      #abilities ul > li .ability-title .ability-score .fas {
+        color: #dfe0e0;
+        font-size: 14px;
+        transition: all 0.3s; }
 #abilities .ability-score .blank {
   color: #e0e1e1; }
 #abilities ul > li .ability-score .fas {
@@ -59,27 +52,6 @@
 #abilities ul > li:hover .ability-score .fas {
   margin-left: 2px; }
 
-/* #abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
-
-#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
-
-#interests .left { float: left; }
-#interests .right { float: right; }
-#interests img { width: 80%; height: auto; }
-#interests .right img { float: right; }
-#interests .interest-content { padding: 40px 0px; } */
-#interests .row:hover .left img {
-  -webkit-transform: rotate(-12deg);
-  -moz-transform: rotate(-12deg);
-  -ms-transform: rotate(-12deg);
-  -o-transform: rotate(-12deg); }
-#interests .row:hover .right img {
-  -webkit-transform: rotate(12deg);
-  -moz-transform: rotate(12deg);
-  -ms-transform: rotate(12deg);
-  -o-transform: rotate(12deg); }
-
-/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
 #projects .row > div {
   margin-bottom: 30px; }
 #projects figure {
@@ -129,7 +101,6 @@
   text-align: center; }
 
 #experiences .experience .experience-details > span {
-  display: block;
   margin-bottom: 6px; }
 #experiences .experience .experience-details .seperator {
   display: none; }
@@ -146,15 +117,11 @@ figure.effect {
   figure.effect img {
     width: -webkit-calc(100% + 20px);
     width: calc(100% + 20px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
   figure.effect:hover img {
     opacity: 0.2;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   figure.effect figcaption {
     text-align: left; }
@@ -163,7 +130,6 @@ figure.effect {
     overflow: hidden;
     padding-bottom: 20px;
     opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s; }
   figure.effect:hover h3 {
     opacity: 1; }
@@ -175,37 +141,24 @@ figure.effect {
     height: 2px;
     background: #fff;
     content: '';
-    -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
-    -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); }
   figure.effect:hover h3::after {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   figure.effect p {
     padding-top: 10px;
     opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
   figure.effect:hover p {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 
 .jumbotron {
-  background: no-repeat center right fixed url(images/background.jpg);
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
+  background: no-repeat center right fixed url(../images/background.jpg);
   background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
   margin-bottom: 0px;
   padding: 0px; }
   .jumbotron .overlay {
@@ -243,7 +196,7 @@ figure.effect {
     background-color: #222222;
     text-align: center;
     z-index: 6; }
-    .jumbotron .scroll-down .glyphicon {
+    .jumbotron .scroll-down .fas {
       color: #FFFFFF;
       font-size: 30px;
       padding-right: 2px;
@@ -253,18 +206,9 @@ figure.effect {
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-direction: normal; }
-    .jumbotron .scroll-down:hover .glyphicon {
+    .jumbotron .scroll-down:hover .fas {
       padding-top: 25px; }
 
-/*.jumbotron:before { 
-    border: 1px solid #FFFFFF;
-    bottom: 30px;
-    content: "";
-    left: 30px;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-}*/
 .navbar {
   border: 0px;
   background-color: #222222;
@@ -310,11 +254,25 @@ figure.effect {
   top: 60px; }
 
 #contact {
-  padding-bottom: 60px; }
-
-#contact a .icon {
-  float: left;
-  margin-right: 10px; }
+  padding-bottom: 60px;
+  padding-top: 10px; }
+  #contact li {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  #contact a .icon {
+    float: left;
+    margin-right: 10px; }
+  #contact .icon {
+    display: inline-block;
+    background: url(../images/sm_icon_sprite.png) no-repeat;
+    height: 32px;
+    width: 32px; }
+    #contact .icon.icon-twitter {
+      background-position: 0px 0px; }
+    #contact .icon.icon-linkedin {
+      background-position: 0px -32px; }
+    #contact .icon.icon-email {
+      background-position: 0px -96px; }
 
 html,
 body {
@@ -382,5 +340,78 @@ hr {
   border-color: #727878;
   opacity: 0.2;
   filter: alpha(opacity=20); }
+
+.background-white {
+  background: #FFFFFF; }
+
+.background-gray {
+  background: #434242; }
+
+@media (max-width: 767px) {
+  .jumbotron:before {
+    bottom: 100px;
+    left: 20px;
+    right: 20px;
+    top: 20px; }
+
+  .jumbotron .container {
+    top: 20%;
+    padding-top: 0px; }
+
+  .jumbotron .scroll-down {
+    width: 100%;
+    right: 0px; }
+
+  .navbar {
+    left: 0px;
+    width: 100%; }
+
+  .navbar .nav > li {
+    height: 60px; }
+
+  .navbar .nav > li a {
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #FFFFFF; }
+
+  .fixed .navbar {
+    top: 0px; }
+
+  .container {
+    padding: 60px 20px;
+    min-width: 280px; }
+
+  .hidden-phone {
+    display: none; }
+
+  #profile .row * {
+    text-align: center; }
+
+  #experiences .experience .experience-details > span {
+    display: block;
+    margin-bottom: 6px; }
+
+  #experiences .experience .experience-details .seperator {
+    display: none; }
+
+  #contact {
+    padding-bottom: 60px; }
+
+  #contact a .icon {
+    float: left;
+    margin-right: 10px; } }
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+  .jumbotron {
+    -webkit-background-size: auto 150%;
+    background-attachment: scroll; } }
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+  .jumbotron {
+    -webkit-background-size: 150% auto;
+    background-attachment: scroll; }
+
+  .jumbotron .sub-title {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,15 +1,8 @@
 .jumbotron {
-    background: no-repeat center right fixed url(images/background.jpg);
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
+    background: no-repeat center right fixed url(../images/background.jpg);
     background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
     margin-bottom: 0px;
     padding: 0px;
     .overlay {
@@ -52,7 +45,7 @@
       background-color: #222222;
       text-align: center;
       z-index: 6;
-      .glyphicon {
+      .fas {
         color: #FFFFFF;
         font-size: 30px;
         padding-right: 2px;
@@ -63,21 +56,11 @@
         animation-iteration-count: infinite;
         animation-direction: normal;
       }
-      &:hover .glyphicon {
+      &:hover .fas {
         padding-top: 25px;
       }
     }
   }
-  
-  /*.jumbotron:before { 
-      border: 1px solid #FFFFFF;
-      bottom: 30px;
-      content: "";
-      left: 30px;
-      position: absolute;
-      right: 30px;
-      top: 30px;
-  }*/
   
   .navbar {
     border: 0px;
@@ -140,9 +123,30 @@
 
   #contact {
       padding-bottom: 60px;
+      padding-top:10px;
+li{
+  padding-top:10px;
+  padding-bottom: 20px;
+}
+      a .icon {
+        float: left;
+        margin-right: 10px;
+    }
+    .icon {
+      display: inline-block;
+      background: url(../images/sm_icon_sprite.png) no-repeat;
+      height: 32px;
+      width: 32px;
+      &.icon-twitter {
+        background-position: 0px 0px;
+      }
+      &.icon-linkedin {
+        background-position: 0px -32px;
+      }
+      &.icon-email {
+        background-position: 0px -96px;
+      }
+    }
   }
 
-  #contact a .icon {
-      float: left;
-      margin-right: 10px;
-  }
+ 
